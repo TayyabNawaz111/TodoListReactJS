@@ -10,6 +10,8 @@ export default function NewTodo(props) {
       alert("Error! Title/Desc is blank");
     } else {
       props.addTodo(title, desc);
+      setTitle("");
+      setDesc("");
     }
   };
 
