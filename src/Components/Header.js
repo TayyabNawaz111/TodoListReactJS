@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand">Todos List</a>
+        <a className="navbar-brand">{props.title}</a>
       </div>
     </nav>
   );
