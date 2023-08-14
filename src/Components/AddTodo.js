@@ -4,7 +4,14 @@ export default function AddTodo(props) {
     <div>
       <h4>{props.todo.title}</h4>
       <p>{props.todo.desc}</p>
-      <button className="btn btn-danger btn-sm">Delete</button>
+      <button
+        className="btn btn-danger btn-sm"
+        onClick={() => {
+          props.onDelete(props.todo);
+        }}
+      >
+        Delete
+      </button>
     </div>
   );
 }
